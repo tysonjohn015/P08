@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'P08-cityscapes'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4DD6B0E68D354B67A3532169B07B85C6 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6C803F5DC25141B8934BA0346A0D88A3 }}
