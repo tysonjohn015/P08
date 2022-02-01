@@ -47,7 +47,7 @@ def predict():
         return K.relu(x, max_value=6)
 
     model = tf.keras.models.load_model(
-        'model/mobilenet_segnet.h5', custom_objects={'dice_coeff':dice_coeff, 'accuracy':'accuracy', 'relu6':relu6})
+        'model/mobilenet_segnet_cce_final.h5', custom_objects={'dice_coeff':dice_coeff, 'accuracy':'accuracy', 'relu6':relu6})
 
     # Load and process mask
     mask = img_to_array(load_img(mask_path, target_size=(img_height, img_width), color_mode="grayscale"))
